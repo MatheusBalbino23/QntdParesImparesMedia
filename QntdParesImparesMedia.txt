@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main(){
+	
+   int x, numero, soma=0, pares=0, impares=0, cont=0;
+   float media;
+   
+    for (x = 1; x <= 8; x++){
+    	printf("Digite um numero: ");
+    	scanf("%d", &numero);
+    	
+    	if (numero % 2 == 0){
+    		pares = pares + 1;
+        }
+		else{
+    		impares = impares + 1;
+		}
+		
+		soma = soma + numero;
+    	cont = cont + 1;
+    }
+
+    media = (float)soma / cont;
+
+	printf("QUANTIDADE DE PARES: %i\n", pares);
+	printf("QUANTIDADE DE IMPARES: %i\n", impares);
+	printf("MEDIA DOS NUMEROS DIGITADOS: %.2f \n", media);
+	
+	
+	return 0;
+}
